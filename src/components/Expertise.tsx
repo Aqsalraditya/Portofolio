@@ -3,42 +3,33 @@ import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
+import { faFigma, faLaravel } from '@fortawesome/free-brands-svg-icons';
 import '../assets/styles/Expertise.scss';
 
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
     "HTML5",
     "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Tailwind CSS",
+    "JavaScript",
+    "PHP",
+    "Laravel",
+    "ReactJs",
+    "Vue.js",
+    "MySQL"
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "GitHub",
+    "GitLab",
+    "Trello",
+    "Figma",
+    "Postman"
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+    "Flutter (Dasar)",
+    "UI/UX Design",
+    "Responsive Design"
 ];
 
 function Expertise() {
@@ -47,10 +38,11 @@ function Expertise() {
         <div className="skills-container">
             <h1>Expertise</h1>
             <div className="skills-grid">
+                {/* Full Stack Web Development */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <FontAwesomeIcon icon={faLaravel} size="3x"/>
                     <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <p>Saya berpengalaman membangun aplikasi web yang dinamis menggunakan ekosistem PHP (Laravel) dan JavaScript modern seperti ReactJS dan Vue.js. Fokus saya adalah menciptakan kode yang bersih dan database MySQL yang teroptimasi.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -59,24 +51,26 @@ function Expertise() {
                     </div>
                 </div>
 
+                {/* UI/UX Design & Tools */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faFigma} size="3x"/>
+                    <h3>UI/UX & Collaboration</h3>
+                    <p>Sebelum masuk ke tahap koding, saya terbiasa merancang antarmuka di Figma. Dalam bekerja tim, saya sangat disiplin menggunakan Git (GitHub/GitLab) dan Trello untuk memastikan manajemen proyek yang efisien.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tools:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
                     </div>
                 </div>
 
+                {/* Mobile & Future Tech */}
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faReact} size="3x"/>
+                    <h3>Mobile Development</h3>
+                    <p>Memiliki minat besar dalam pengembangan aplikasi mobile lintas platform. Saat ini saya sedang mendalami Flutter untuk melengkapi kemampuan saya dalam menghadirkan solusi digital di berbagai perangkat.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Exploring:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
