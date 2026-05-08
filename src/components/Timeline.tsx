@@ -16,11 +16,11 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="July 2025 - Dec 2025"
+            date="September 2025 - Dec 2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Sentral Bisnis Wikrama</h3>
+            <h3 className="vertical-timeline-element-title">Sentra Bisnis Wikrama</h3>
             <p>
               Mengembangkan aplikasi web dengan Vue.js (frontend) dan backend dasar, termasuk pembuatan serta integrasi API dengan database.
               Membangun sistem dengan fitur autentikasi dan CRUD master data, serta melakukan perapihan UI/UX agar alur aplikasi lebih rapi dan user-friendly.
